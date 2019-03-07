@@ -1,0 +1,29 @@
+.new{
+	margin-top: 100px;
+	height: 1000px;
+}
+.firstt{
+	width: 1200px;
+}
+.firstt .r_f{
+	width: 900px;
+}
+.np1{
+	position: relative;
+	left: -100%;
+}
+.np2{
+	margin-top: 30px;
+	text-align: center;
+	position: relative;
+	right: -100%;
+}
+.np2>a{
+	color: #737373;
+	padding: 0 36px;
+	font-size: 15px;
+	
+}
+.np2>a:hover{
+	color:red;
+}

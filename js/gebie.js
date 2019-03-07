@@ -1,0 +1,184 @@
+//固定定位
+ $(function(){
+ 	$(window).scroll(function(){
+ 		if($(window).scrollTop()>=20){
+ 			$(".nav").addClass("fix");
+ 			$(".fullwidthbanner li").addClass("grey");
+ 		}else{
+ 			$(".nav").removeClass("fix");
+ 			$(".fullwidthbanner li").removeClass("grey");
+ 		}
+ 	});
+ });
+//固定定位结束
+//特惠区
+$(function(){
+	var num=0;
+	$(".left").click(function(){
+		num--;
+		if(num<0){
+			num=2;
+		}		
+		$("#th").animate({
+			"left":-950*num,
+		},1000);				
+		console.log(num)
+	});
+	$(".right").click(function(){
+		num++;
+		$("#th").animate({
+			"left":-950*num,
+		},1000);
+		if(num>=2){
+			num=-1;
+		}
+		console.log(num)
+	});
+//	实现左右轮播效果
+    $("#th>li").mouseover(function(){
+    	
+    });
+});
+//特惠区结束
+//客户案例开始
+$(function(){
+	$(".fir").mouseover(function(){
+		$(this).find("img").removeClass("grey");		
+	});
+	$(".fir").mouseout(function(){
+		$(this).find("img").addClass("grey");
+	});
+});
+$(function(){
+	$(".fir").mouseover(function(){
+		$(".box").animate({
+			"top":35,
+		},300);
+	});
+	$(".fir").mouseout(function(){
+		$(".box").animate({
+			"top":0,
+		},300);
+	});
+})
+//客户案例结束
+//动画显示 
+	 $(window).ready(function(){
+	    	$(".m_top").animate({
+	    		"left":0,
+	    	},1500)
+});  //客户案例动画显示
+	 $(window).ready(function(){
+	    	$(".m_mid").animate({
+	    		"right":0,
+	    	},1500)
+}); //客户案例导航动画显示
+	 $(window).ready(function(){
+	    	$("#dong1").animate({
+	    		"bottom":0,
+	    	},1000)
+	    	$("#dong2").animate({
+	    		"bottom":0,
+	    	},1500)
+	    	$("#dong3").animate({
+	    		"bottom":0,
+	    	},2000)
+	    	$("#dong4").animate({
+	    		"bottom":0,
+	    	},2500)
+	    	$("#dong5").animate({
+	    		"bottom":0,
+	    	},3000)
+	    	$("#dong6").animate({
+	    		"bottom":0,
+	    	},3500)
+	    	$("#dong7").animate({
+	    		"bottom":0,
+	    	},4000)
+	    	$("#dong8").animate({
+	    		"bottom":0,
+	    	},4500)
+	    	$("#dong9").animate({
+	    		"bottom":0,
+	    	},5000)
+	    	$(".m_bot>a").animate({
+			"right":0,
+		     },3500)
+}); // 图片动画显示
+$(window).ready(function(){
+	 $(window).scroll(function(){
+	 	if($(window).scrollTop()>=1000){
+	 		$(".all_main").fadeIn(3000)
+	 	}
+	 });
+});  //关于我们 动画显示
+
+$(window).ready(function(){
+	 		$(".np").animate({
+	 			"left":0,
+	 		},2000)
+	 		$(".np1").animate({
+	 			"left":0,
+	 		},2000)
+	 		$(".np2").animate({
+	 			"right":0,
+	 		},2000)
+	 		$("#hua1").animate({
+	 			"bottom":0,
+	 		},1000)
+	 		$("#hua2").animate({
+	 			"bottom":0,
+	 		},1500)
+	 		$("#hua3").animate({
+	 			"bottom":0,
+	 		},2000)
+	 		$("#hua4").animate({
+	 			"bottom":0,
+	 		},2500)
+	 		$(".new_main>a").animate({
+	 			"left":0,
+	 		},3000)
+});//新闻动画显示
+$(window).ready(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>=300){
+			$(".bot_t").animate({
+				"top":0,
+			},2000);
+			$(".bot_m>ul").animate({
+				"left":0,
+			},2000);
+			$(".m_r").animate({
+				"right":0,
+			},2000)
+		}
+	})
+});
+//表单元素开始
+$(window).ready(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>=300){
+			$(".liu_l").animate({
+				"left":0,
+			},2000)
+			$(".liu_r").animate({
+				"right":0,
+			},2000)
+		}
+	})
+});
+$(window).ready(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>=300){
+			$(".one").animate({
+				"left":0,
+			},2000)
+			$(".three").animate({
+				"right":0,
+			},2000)
+			$(".two").animate({
+				"left":0,
+			},2000)
+		}
+	})
+});

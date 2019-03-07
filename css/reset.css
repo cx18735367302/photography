@@ -1,0 +1,29 @@
+body,ul,p,h4,h3{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.parent:after{
+	content: " ";
+	height: 0;
+	display: block;
+	clear: both;
+}
+img{
+	border: none;
+}
+/*公共样式*/
